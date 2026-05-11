@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resume - My Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <ul class="nav-bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="associations.html">Associations</a></li>
+        </ul>
+
+        <h1>Ken Everest Nunes</h1>
+        <p>Philadelphia, PA | (267)-688-8038 | <a href="mailto:kennunes77@gmail.com">kennunes77@gmail.com</a> | <a href="https://linkedin.com/in/ken-nunes-5694241a3">linkedin.com/in/ken-nunes-5694241a3</a></p>
+
+        <h2>Education</h2>
+        <p><strong>Drexel University</strong> | Philadelphia, PA<br>
+        Master of Science in Computer Science (Expected Graduation: June 2026) | GPA: 3.89 / 4</p>
+        
+        <p><strong>Mumbai University</strong> | Mumbai, India<br>
+        Bachelor of Engineering in Computer Engineering (Graduation: June 2023) | GPA: 3.8 / 4</p>
+
+        <h2>Experience</h2>
+        <p><strong>Amazon.com Services LLC</strong> | SDE 1 Intern<br>
+        <em>Jun 2025 - Oct 2025 | Bellevue, WA</em></p>
+        <ul class="coursework-list">
+            <li>Designed and deployed a single-agent AI architecture for ticket resolution, achieving parity with a multi-agent system while cutting infrastructure costs by ~50% and reducing team workload by 31%.</li>
+            <li>Provisioned and version-controlled all Amazon Bedrock Agent infrastructure using AWS CDK as infrastructure-as-code, enabling consistent and repeatable deployments; integrated AWS Lambda and Amazon Bedrock Knowledge Bases to drive reliable, agent-powered automation of service workflows.</li>
+            <li>Implemented a confidence scoring and classification layer that ensured the system only acted on inventory-related tickets when data was complete, directly boosting system reliability, accuracy and reducing false-positive resolutions.</li>
+            <li>Designed for operational resilience: the agent gracefully degraded to human escalation paths when confidence thresholds were not met, ensuring SLA compliance even in ambiguous scenarios.</li>
+        </ul>
+
+        <p><strong>Rajkamal Barscan Systems Pvt Ltd</strong> | Software Developer<br>
+        <em>Jun 2023 - Jun 2024 | Mumbai, India</em></p>
+        <ul class="coursework-list">
+            <li>Built and operated full-stack web applications using Django, React, and Node.js, maintaining mobile-responsive, high-availability services across all screen sizes with zero-downtime deployments via Docker containerization.</li>
+            <li>Developed and maintained RESTful APIs with Django REST Framework and Node.js; introduced Redis caching to reduce latency on high-frequency queries and improve service throughput under growing load.</li>
+            <li>Implemented Role-Based Access Control (RBAC) and JWT-based authentication, with comprehensive unit test coverage using Jest and Pytest to validate security boundaries and access control correctness.</li>
+            <li>Triaged and resolved production incidents across the full stack, reducing integration failures through root-cause analysis and systematic debugging of front-end to back-end communication issues.</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <p><strong>Real-Time Crypto Market Dashboard</strong><br>
+        <em>Jan 2026 - Feb 2026</em></p>
+        <ul class="coursework-list">
+            <li>Built a high-performance monitoring app using FastAPI and React with a server-side WebSocket proxy to stream live Bitcoin data from the Binance API, reducing client overhead and improving scalability.</li>
+            <li>Engineered the backend as a data transformer to filter and normalize high-frequency tick data, enabling rapid frontend updates without performance degradation via Zustand state management.</li>
+        </ul>
+
+        <p><strong>E-commerce Price Comparison & Sentiment Analyzer</strong><br>
+        <em>Oct 2023 - April 2024</em></p>
+        <ul class="coursework-list">
+            <li>Architected a data aggregation pipeline using Python and BeautifulSoup to scrape and clean product data from multiple ecommerce platforms, serving results through Django REST Framework APIs with fast, consistent responses.</li>
+            <li>Trained a Random Forest classifier on 10,000+ product reviews, achieving 92% accuracy in sentiment classification to surface actionable insights for end users.</li>
+        </ul>
+
+        <h2>Technical Skills</h2>
+        <ul class="coursework-list">
+            <li><strong>Programming Languages:</strong> Python, JavaScript, TypeScript, Golang.</li>
+            <li><strong>Cloud & Infrastructure:</strong> AWS CDK, Pulumi, AWS Lambda, AWS CloudWatch, Amazon Bedrock, Docker, WebSockets.</li>
+            <li><strong>Frameworks & Libraries:</strong> React, Redux, Node.js, Express, Django, Django REST Framework, Tailwind CSS.</li>
+            <li><strong>Data & Testing:</strong> MySQL, MongoDB, Elasticsearch, Redis, Git, Jest, Pytest.</li>
+        </ul>
+
+        <h2>Relevant Coursework</h2>
+        <ul class="coursework-list">
+            <li>Cloud Native Platform Engineering, Software Architecture, Distributed Systems.</li>
+            <li>Agile Software Development Process, Operating Systems, Database Management Systems.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
