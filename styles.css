@@ -1,0 +1,130 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --primary-navy: #1A365D; 
+    --secondary-teal: #4FD1C5;
+    --bg-offwhite: #F7FAFC; 
+    --text-dark: #2D3748;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-offwhite);
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-navy);
+}
+
+header {
+    background-color: var(--primary-navy);
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary-teal);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-top: 3px solid var(--secondary-teal);
+}
+
+.dropdown-content a {
+    color: var(--primary-navy);
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hero {
+    background-color: var(--white);
+    border-left: 5px solid var(--secondary-teal);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.accordion {
+    background-color: var(--white);
+    color: var(--primary-navy);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #E2E8F0;
+    outline: none;
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+.active, .accordion:hover {
+    background-color: var(--secondary-teal);
+    color: var(--white);
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: var(--white);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #E2E8F0;
+    border-top: none;
+}
+
+.gear-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
